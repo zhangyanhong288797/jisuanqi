@@ -27,9 +27,87 @@ public class MainActivity extends AppCompatActivity {
                 TextView editText1 = (TextView) findViewById(R.id.txt_in);
                 String c = editText1.getText().toString();
                 if (c.equals("0")) {
-                    txtResult.setText("0");
+                   txtResult.setText(" ");
                 } else {
-                    txtResult.setText(txtResult.getText() + "0");
+                   txtResult.setText(txtResult.getText() + "0");
+                }
+            }
+        });
+        Button btna = (Button) findViewById(R.id.btna);
+        btna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_in);
+                String c = editText1.getText().toString();
+                if (c.equals("0")) {
+                    txtResult.setText("a");
+                } else {
+                    txtResult.setText(txtResult.getText() + "a");
+                }
+            }
+        });
+        Button btnb = (Button) findViewById(R.id.btnb);
+        btnb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_in);
+                String c = editText1.getText().toString();
+                if (c.equals("0")) {
+                    txtResult.setText("b");
+                } else {
+                    txtResult.setText(txtResult.getText() + "b");
+                }
+            }
+        });
+        Button btnc = (Button) findViewById(R.id.btnc);
+        btnc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_in);
+                String c = editText1.getText().toString();
+                if (c.equals("0")) {
+                    txtResult.setText("c");
+                } else {
+                    txtResult.setText(txtResult.getText() + "c");
+                }
+            }
+        });
+        Button btndd = (Button) findViewById(R.id.btnd);
+        btndd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_in);
+                String c = editText1.getText().toString();
+                if (c.equals("0")) {
+                    txtResult.setText("d");
+                } else {
+                    txtResult.setText(txtResult.getText() + "d");
+                }
+            }
+        });
+        Button btne = (Button) findViewById(R.id.btne);
+        btne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_in);
+                String c = editText1.getText().toString();
+                if (c.equals("0")) {
+                    txtResult.setText("e");
+                } else {
+                    txtResult.setText(txtResult.getText() + "e");
+                }
+            }
+        });
+        Button btnf = (Button) findViewById(R.id.btnf);
+        btnf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_in);
+                String c = editText1.getText().toString();
+                if (c.equals("0")) {
+                    txtResult.setText("f");
+                } else {
+                    txtResult.setText(txtResult.getText() + "f");
                 }
             }
         });
@@ -289,6 +367,7 @@ public class MainActivity extends AppCompatActivity {
                 editText3.setText(Float.toString(a));
             }
         });
+
         Button btnsin = (Button) findViewById(R.id.btn_sin);
         btnsin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -299,7 +378,7 @@ public class MainActivity extends AppCompatActivity {
                 String c = editText1.getText().toString();
                 editText2.setText("Sin");
                 editText1.setText(c);
-                a = Float.parseFloat(c);
+                a= (float) Math.toRadians( Double.parseDouble( c ) );
                 a = (float) (Math.sin(a));
                 editText3.setText(Float.toString(a));
             }
@@ -314,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
                 String c = editText1.getText().toString();
                 editText2.setText("Cos");
                 editText1.setText(c);
-                a = Float.parseFloat(c);
+                a= (float) Math.toRadians( Double.parseDouble( c ) );
                 a = (float) (Math.cos(a));
                 editText3.setText(Float.toString(a));
             }
@@ -329,7 +408,7 @@ public class MainActivity extends AppCompatActivity {
                 String c = editText1.getText().toString();
                 editText2.setText("Tan");
                 editText1.setText(c);
-                a = Float.parseFloat(c);
+                a= (float) Math.toRadians( Double.parseDouble( c ) );
                 a = (float) (Math.tan(a));
                 editText3.setText(Float.toString(a));
             }

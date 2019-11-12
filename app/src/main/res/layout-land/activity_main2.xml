@@ -125,6 +125,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="9" />
+            <Button
+                android:id="@+id/btn_lf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="x³" />
 
             <Button
                 android:id="@+id/btn_sub"
@@ -160,6 +166,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="6" />
+            <Button
+                android:id="@+id/btn_pf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="x²" />
 
             <Button
                 android:id="@+id/btn_plus"
@@ -205,6 +217,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="3" />
+                    <Button
+                        android:id="@+id/btn_ds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="1/x" />
                 </LinearLayout>
 
                 <LinearLayout

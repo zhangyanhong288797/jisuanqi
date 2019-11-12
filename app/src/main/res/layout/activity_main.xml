@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="km->cm" />
+                android:text="km转cm" />
 
             <Button
                 android:id="@+id/btn_c"
@@ -42,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="k转um" />
+
             <Button
                 android:id="@+id/btn_binary4"
                 android:layout_width="wrap_content"
@@ -224,13 +225,41 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_进制转换及单位换算部分"
+                android:id="@+id/btna"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="进制转换及单位换算部分" />
-
-
+                android:text="a" />
+            <Button
+                android:id="@+id/btnb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="b" />
+            <Button
+                android:id="@+id/btnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c" />
+            <Button
+                android:id="@+id/btnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d" />
+            <Button
+                android:id="@+id/btne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="e" />
+            <Button
+                android:id="@+id/btnf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="f" />
 
         </LinearLayout>
 
@@ -343,6 +372,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="%" />
+
 
         </LinearLayout>
 

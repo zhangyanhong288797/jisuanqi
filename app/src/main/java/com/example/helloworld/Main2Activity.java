@@ -22,7 +22,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Main2Activity extends AppCompatActivity {
-
+float w=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -187,6 +187,49 @@ public class Main2Activity extends AppCompatActivity {
                 TextView editText1 = (TextView) findViewById(R.id.txt_result);
                 String c = editText1.getText().toString();
                 editText1.setText(editText1.getText() + "-");
+            }
+        });
+        Button btnds = (Button) findViewById(R.id.btn_ds);
+        btnds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_result);
+                TextView editText2 = (TextView) findViewById(R.id.txt_result2);
+                String c = editText1.getText().toString();
+                editText1.setText(editText1.getText() + "1/x");
+                w = Float.parseFloat(c);
+                w = (float) (1/w);
+                editText2.setText( Float.toString(w) );
+
+
+            }
+        });
+        Button btnpf = (Button) findViewById(R.id.btn_pf);
+        btnpf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_result);
+                TextView editText2 = (TextView) findViewById(R.id.txt_result2);
+                String c = editText1.getText().toString();
+                editText1.setText(editText1.getText() + "x²");
+                w = Float.parseFloat(c);
+                w = (float) (w * w );
+                editText2.setText( Float.toString(w) );
+
+            }
+        });
+        Button btnlf = (Button) findViewById(R.id.btn_lf);
+        btnlf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView editText1 = (TextView) findViewById(R.id.txt_result);
+                TextView editText2 = (TextView) findViewById(R.id.txt_result2);
+                String c = editText1.getText().toString();
+                editText1.setText(editText1.getText() + "x³");
+                w = Float.parseFloat(c);
+                w = (float) (w * w * w);
+                editText2.setText( Float.toString(w) );
+
             }
         });
         Button btnmulti = (Button) findViewById(R.id.btn_multi);
